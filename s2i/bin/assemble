@@ -3,7 +3,7 @@
 set -e
 
 echo "---> Installing application source"
-cp -Rf /tmp/src/complete/. ./
+cp -Rf /tmp/src/. ./
 
 echo "---> Building Spring Boot application from source"
 echo "--> # MVN_ARGS = $MVN_ARGS"
