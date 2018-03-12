@@ -6,5 +6,5 @@ APP_TARGET=${APP_TARGET:-target}
 echo "---> Starting Spring Boot application"
 echo "--> # APP_TARGET = $APP_TARGET"
 echo "--> # JAVA_OPTS = $JAVA_OPTS"
-echo "---> Running application from jar ($APP_TARGET) ..."
-java $JAVA_OPTS -jar $APP_TARGET
+echo "---> Running application from jar ($(find -maxdepth 2 -type f -name '*.jar')) ..."
+java $JAVA_OPTS -jar `find -maxdepth 2 -type f -name '*.jar'`
